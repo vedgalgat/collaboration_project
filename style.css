@@ -1,0 +1,99 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+
+body {
+   color: rgb(214, 18, 18);
+   background-image: url("images/vvv.jpg");
+   background-size: cover;
+   background-position: center;
+}
+
+/* form::before{
+    content: "";
+    position: absolute;
+    background: url('images/wallpapersden.com_abstract-gradient-hd-shapes_2560x1440.jpg')no-repeat center/cover;
+    filter: drop-shadow(50px); 
+    filter: opacity(0.99);
+    filter: brightness(10px);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+} */
+h1 {
+   color: rgb(181, 23, 23);
+   text-align: center;
+   text-decoration: underline;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+form {
+   height: auto;
+   width: 50vw;
+   margin-left: 24vw;
+   margin-top: 3vw;
+   line-height: 4vw;
+   border: 1px solid gray;
+   box-shadow: 0 0 5px rgb(192, 12, 33) ,0 0 10px rgb(255, 0, 21);
+   padding: 3vw;
+   border-radius: 10px;
+   background-color: rgba(0, 0, 0, 0.406);
+
+}
+
+label {
+   font-size: 1.5rem;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: chartreuse;
+}
+
+form .box {
+   width: 35vw;
+   height: 2.9vw;
+   border: none;
+   background: transparent;
+   background-color: #6d3f046c;
+   /* border: 1px solid white; */
+   color: white;
+   font-size: 1.5rem;
+   border-radius: 5px;
+   margin-left: 4vw;
+   outline: none;
+
+}
+form .box:focus{
+   border: 1px solid gray;
+}
+::placeholder {
+   color: rgba(255, 255, 0, 0.424);
+   font-size: 1.2rem;
+   text-align: center;
+}
+
+button {
+   padding: 10px 15vw;
+   margin-left: 6vw;
+   margin-top: 2vw;
+   border-radius: 15px;
+   background: transparent;
+   border: 2px solid gray;
+   color: white;
+   font-size: 1.5rem;
+   background-color: rgba(0, 128, 0, 0.705);
+   cursor: pointer;
+
+}
+ 
+ #add {
+   width: 30vw;
+   height: 9vw;
+   resize: none;
+   border: none;
+   background-color: #6d3f046c;
+   margin-left: 5vw;
+   color: white;
+   font-size: 1.4rem;
+   outline: none  ;
+ }

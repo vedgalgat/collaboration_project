@@ -11,7 +11,22 @@
 
 <body>
     <h1>Enter own Details</h1>
-    <form action="" method="post"> <!-- Because post method is secure as compare then get method -->
+    <select class="field">
+        <option>Choose an form....</option>
+        <option>Student Management</option>
+        <option>Teacher Management</option>
+        <option>Class Management</option>
+        <option>Course Management</option>
+        <option>Attendance Management</option>
+        <option>Examination Management</option>
+        <option>fee Management</option>
+        <option>Library Management</option>
+        <option>Staff Management</option>
+        <option>Timetable Management</option>
+        <option>Event Management</option>
+        <option>Hostel Management</option>
+    </select>
+    <form action="" method="post" id="form1"> <!-- Because post method is secure as compare then get method -->
 
         <label for="id">Student ID <span style="color: red;">*</span></label><br>
         <input type="text" class="box" placeholder="Enter your ID:" required><br>
@@ -51,9 +66,107 @@
 
 
         <label for="Address">Address <span style="color: red;">*</label><br>
-            <textarea name="Address" id="add" rows="10" cols="70"></textarea>
+        <textarea name="Address" id="add" rows="10" cols="70"></textarea>
         <button>Submit</button>
     </form>
+    <div class=" form hidden">
+
+
+        <h2>Teacher Management</h2>
+        <form action="" method="post" id="form2"> <!-- Because post method is secure as compare then get method -->
+            <label for="id">Student ID <span style="color: red;">*</span></label><br>
+            <input type="text" class="box" placeholder="Enter your ID:" required><br>
+
+            <label for="name">First Name <span style="color: red;">*</label><br>
+            <input type="text" class="box" required><br>
+
+            <label for="last name">Last Name <span style="color: red;">*</label><br>
+            <input type="text" class="box" required><br>
+
+            <label for="email">Email <span style="color: red;">*</label><br>
+            <input type="email" class="box" required><br>
+
+            <label for="DOB">Date of Birth <span style="color: red;">*</label><br>
+            <input type="date" class="box" required><br>
+
+            <label for="Gender">Gender <span style="color: red;">*</label>
+            <label style="color: yellow;" for="male">Male</label>
+            <input type="radio" name="gender" id="male" required>
+            <label style="color: yellow;" for="female">Female</label>
+            <input type="radio" name="gender" id="female" required><br>
+
+            <label for="Address">Enrollment Date <span style="color: red;">*</label><br>
+            <input type="text" class="box" required><br>
+
+            <label for="Address">Attendance Record</label><br>
+            <input type="text" class="box"><br>
+
+            <label for="Address">Academic Performance</label><br>
+            <input type="text" class="box"><br>
+
+            <label for="Address">Health Information</label><br>
+            <input type="name" class="box"><br>
+
+            <label for="Address">Extracurricular Activities</label><br>
+            <input type="name" class="box"><br>
+
+
+            <label for="Address" id="Address">Address <span style="color: red;">*</label><br>
+            <textarea name="Address" id="add" rows="10" cols="70"></textarea>
+            <button>Submit</button>
+
+        </form>
+    </div>
+    <div class=" form hidden">
+
+
+        <h2>Teacher Management</h2>
+        <form action="" method="post" id="form2"> <!-- Because post method is secure as compare then get method -->
+            <label for="id">Student ID <span style="color: red;">*</span></label><br>
+            <input type="text" class="box" placeholder="Enter your ID:" required><br>
+
+            <label for="name">First Name <span style="color: red;">*</label><br>
+            <input type="text" class="box" required><br>
+
+            <label for="last name">Last Name <span style="color: red;">*</label><br>
+            <input type="text" class="box" required><br>
+
+            <label for="email">Email <span style="color: red;">*</label><br>
+            <input type="email" class="box" required><br>
+
+            <label for="DOB">Date of Birth <span style="color: red;">*</label><br>
+            <input type="date" class="box" required><br>
+
+            <label for="Gender">Gender <span style="color: red;">*</label>
+            <label style="color: yellow;" for="male">Male</label>
+            <input type="radio" name="gender" id="male" required>
+            <label style="color: yellow;" for="female">Female</label>
+            <input type="radio" name="gender" id="female" required><br>
+
+            <label for="Address">Enrollment Date <span style="color: red;">*</label><br>
+            <input type="text" class="box" required><br>
+
+            <label for="Address">Attendance Record</label><br>
+            <input type="text" class="box"><br>
+
+            <label for="Address">Academic Performance</label><br>
+            <input type="text" class="box"><br>
+
+            <label for="Address">Health Information</label><br>
+            <input type="name" class="box"><br>
+
+            <label for="Address">Extracurricular Activities</label><br>
+            <input type="name" class="box"><br>
+
+
+            <label for="Address" id="Address">Address <span style="color: red;">*</label><br>
+            <textarea name="Address" id="add" rows="10" cols="70"></textarea>
+            <button>Submit</button>
+
+        </form>
+    </div>
+    <script src="app.js"></script> 
+  
 
 </body>
 

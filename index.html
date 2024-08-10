@@ -11,23 +11,18 @@
 
 <body>
     <h1>Enter own Details</h1>
-    <select class="field">
-        <option>Choose an form....</option>
-        <option>Student Management</option>
-        <option>Teacher Management</option>
-        <option>Class Management</option>
-        <option>Course Management</option>
-        <option>Attendance Management</option>
-        <option>Examination Management</option>
-        <option>fee Management</option>
-        <option>Library Management</option>
-        <option>Staff Management</option>
-        <option>Timetable Management</option>
-        <option>Event Management</option>
-        <option>Hostel Management</option>
+    <select class="formselector">
+        <option value="" disabled selected>Choose an Form</option>
+        <option value="student_management">Student Management</option>
+        <option value="Teacher_management">Teacher Management</option>
+        <option value="class_management">Class Management</option>
+        <option value="fee_management">fee Management</option>
     </select>
-    <form action="" method="post" id="form1"> <!-- Because post method is secure as compare then get method -->
 
+    <!-- Student Management Form  -->
+
+    <form action="" method="" id="student_management" class="form">
+        <h2>Student Management</h2>
         <label for="id">Student ID <span style="color: red;">*</span></label><br>
         <input type="text" class="box" placeholder="Enter your ID:" required><br>
 
@@ -52,27 +47,139 @@
         <label for="Address">Enrollment Date <span style="color: red;">*</label><br>
         <input type="text" class="box" required><br>
 
-        <label for="Address">Attendance Record</label><br>
-        <input type="text" class="box"><br>
-
-        <label for="Address">Academic Performance</label><br>
-        <input type="text" class="box"><br>
-
         <label for="Address">Health Information</label><br>
         <input type="name" class="box"><br>
-
-        <label for="Address">Extracurricular Activities</label><br>
-        <input type="name" class="box"><br>
-
 
         <label for="Address">Address <span style="color: red;">*</label><br>
         <textarea name="Address" id="add" rows="10" cols="70"></textarea>
         <button>Submit</button>
     </form>
 
+    <!-- Teacher managment Form -->
+
+    <form action="" method="" class="form" id="Teacher_management" <span style="display: none;"></span>
+        <h3>Teacher Management</h3>
+        <label for="id" class="label_2">Teacher ID <span style="color: red;">*</span></label><br>
+        <input type="text" class="box" placeholder="Enter your ID:" required><br>
+
+        <label for="name" class="label_2">First Name<span style="color: red;">*</label><br>
+        <input type="text" class="box" required><br>
+
+        <label for="last name" class="label_2">Last Name<span style="color: red;">*</label><br>
+        <input type="text" class="box" required><br>
+
+        <label for="email" class="label_2">Email<span style="color: red;">*</label><br>
+        <input type="email" class="box" required><br>
+
+        <label for="Gender" class="label_2">Gender<span style="color: red;">*</label>
+        <label style="color: yellow;" class="label_2" for="male">Male</label>
+        <input type="radio" name="gender" id="male" required>
+        <label style="color: yellow;" class="label_2" for="female">Female</label>
+        <input type="radio" name="gender" id="female" required><br>
+
+        <label for="content" class="label_2">Contact Information<span style="color: red;">*</label><br>
+        <input type="text" class="box" required><br>
+
+        <label for="Hire date" class="label_2">Hire Date <span style="color: red;">*</span></label><br>
+        <input type="name" class="box" required><br>
+
+        <label for="Department" class="label_2">Department <span style="color: red;">*</span></label><br>
+        <input type="name" class="box" required><br>
+
+        <label for="Subjects" class="label_2">Subjects Taught <span style="color: red;">*</span></label><br>
+        <input type="name" class="box" required><br>
+
+        <label for="class" class="label_2">Class Schedule <span style="color: red;">*</span></label><br>
+        <input type="name" class="box" required><br>
+
+        <label for="Attendance" class="label_2">Attendance Record <span style="color: red;">*</span></label><br>
+        <input type="name" class="box" required><br>
+
+        <label for="Address" class="label_2">Address <span style="color: red;">*</label><br>
+        <textarea name="Address" id="add" rows="10" cols="70" required></textarea>
+        <button id="btn">Submit</button>
+
+    </form>
+
+    <!-- Class Management Form  -->
+
+    <form action="" method="" class="form" id="class_management" <span style="display: none;"></span>
+        <h4>Class Management</h4>
+        <label for="id">Class ID<span style="color: red;">*</span><span style="margin-left: 3vw;"></span></label>
+        <input type="text" class="form3" placeholder="Enter your ID:" required><br>
+
+        <label for="name">Class Name <span style="color: red;">*</label>
+        <input type="text" class="form3" required><br>
+
+        <label for="grade-level">
+            Grade Level <span style="color: red;">*</span>
+        </label>
+        <select name="grade-level" id="grade-level">
+            <option value="">Select a grade</option>
+            <option value="A+">A+</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+        </select><br>
+
+        <label for="Subjects">Subject <span style="color: red;">*</span> <span style="margin-left: 3vw;"></span></label>
+        <input type="text" class="form3" required><br>
+
+        <label for="class Teacher">Class Teacher<span style="color: red;">*</span></label>
+        <input type="text" class="form3" required><br>
+
+        <label for="list of Student">List of Student <span style="color: red;">*</span></label>
+        <input type="text" class="form3" required><br>
+
+        <label for="list of Teacher">List of Teacher <span style="color: red;">*</span></label>
+        <input type="text" class="form3" required>
+        <button class="btn">Submit</button>
+
+    </form>
+
+    <!--Fee management -->
+
+    <form action="" method="" class="form" id="fee_management"<span style="display: none;"></span>
+
+        <h4 id="fee">Fee Management<span style="color: red;">.</span></h4>
+        <label for="fee id" id="form4">Fee ID <span style="color: red;">*</label>
+        <input type="text" class="form3" required><br>
+
+        <label for="Student id" id="form4">Student ID <span style="color: red;">*</label>
+        <input type="text" class="form3" required><br>
+
+        <label for="fee Type" id="form4">
+            Fee Type <span style="color: red;">*</span>
+        </label>
+        <select name="fee type" class="fee">
+            <option value="">Fee Type </option>
+            <option value="Tuition">Tuition</option>
+            <option value="Lab">Lab</option>
+            <option value="Library">Library</option>
+        </select><br>
+
+        <label for="Amount" id="form4">Amount <span style="color: red;">*</label>
+        <input type="text" class="form3" required><br>
+
+        <label for="Due Date" id="form4">Due Date <span style="color: red;">*</label>
+        <input type="date" class="form3" required><br>
+
+        <label for="Payment Date" id="form4">Payment Date <span style="color: red;">*</label>
+        <input type="text" class="form3" required><br>
+
+        <label for="Payment status" id="form4">
+            Payment Status <span style="color: red;">*</span>
+        </label>
+        <select name="Payment status" class="fee">
+            <option value="">Payment Status</option>
+            <option value="Successful">Successful</option>
+            <option value="unSuccessful">UnSuccessful</option>
+        </select>
+
+        <button class="btn">Submit</button>
+    </form>
+
     <script src="app.js"></script>
-
-
 </body>
 
 </html>

@@ -1,9 +1,19 @@
-// let form1=document.querySelector("#form1")
-// let form2=document.querySelector("#form2")
-// let feild=document.querySelector(".feild")
+const formselector = document.querySelector('.formselector');
+const forms = document.querySelectorAll('.form');
+formselector.addEventListener("change", () => {
+    const selectedForm = formselector.value;
+    forms.forEach(form => {
+        if (form.id === selectedForm) {
+            form.style.display = "block";
+        } else {
+            form.style.display = "none";
 
-// feild.addEventListener("cllck",()=>{
-//     form1.style.display="none "
-// })
+        }
+    });
+});
+
+
+
+
 
 

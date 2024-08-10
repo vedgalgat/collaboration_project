@@ -6,29 +6,16 @@
 
 body {
    color: rgb(214, 18, 18);
-   background-image: url("images/vvv.jpg");
+   background-image: url("images/copy.jpg");
    background-size: cover;
    background-position: center;
 }
-
-/* form::before{
-    content: "";
-    position: absolute;
-    background: url('images/wallpapersden.com_abstract-gradient-hd-shapes_2560x1440.jpg')no-repeat center/cover;
-    filter: drop-shadow(50px); 
-    filter: opacity(0.99);
-    filter: brightness(10px);
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-} */
 h1 {
-   color: rgb(181, 23, 23);
+   color: yellow;
    text-align: center;
    text-decoration: underline;
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
 form {
    height: auto;
    width: 50vw;
@@ -36,11 +23,17 @@ form {
    margin-top: 3vw;
    line-height: 4vw;
    border: 1px solid gray;
-   box-shadow: 0 0 5px rgb(192, 12, 33) ,0 0 10px rgb(255, 0, 21);
+   box-shadow: 0 0 5px rgb(192, 12, 33), 0 0 10px rgb(255, 0, 21);
    padding: 3vw;
    border-radius: 10px;
-   background-color: rgba(0, 0, 0, 0.406);
+   background-color: rgba(0, 0, 0, 0.332);
+   filter: drop-shadow(500px) !important;
+   margin-bottom: 5vw;
+}
 
+ #Teacher_management{
+   border: 1px solid greenyellow;
+   box-shadow: 0 0 10px greenyellow ,0 0 20px greenyellow;
 }
 
 label {
@@ -54,18 +47,18 @@ form .box {
    height: 2.9vw;
    border: none;
    background: transparent;
-   background-color: #6d3f046c;
-   /* border: 1px solid white; */
+   background-color: #04502a43;
    color: white;
    font-size: 1.5rem;
    border-radius: 5px;
    margin-left: 4vw;
    outline: none;
-
 }
-form .box:focus{
+
+form .box:focus {
    border: 1px solid gray;
 }
+
 ::placeholder {
    color: rgba(255, 255, 0, 0.424);
    font-size: 1.2rem;
@@ -81,38 +74,158 @@ button {
    border: 2px solid gray;
    color: white;
    font-size: 1.5rem;
-   background-color: rgba(0, 128, 0, 0.705);
+   background-color: rgba(128, 0, 128, 0.615);
    cursor: pointer;
-
 }
- 
- #add {
+
+#add {
    width: 30vw;
    height: 9vw;
    resize: none;
    border: none;
-   background-color: #6d3f046c;
+   background-color: #04502a43;
    margin-left: 5vw;
    color: white;
    font-size: 1.4rem;
-   outline: none  ;
- }
- .field{
-   color:white;
+   outline: none;
+}
+
+.formselector {
+   color: white;
    font-size: 1.2rem;
    font-weight: bold;
    outline: none;
    border: 1px solid red;
    border-radius: 10px;
    margin-left: 1vw;
-   background-color: black;
- }
- h2{
+   background-color: rgb(10, 2, 45);
    text-align: center;
-   margin-top: 3vw;
-   /* text-decoration: overline !important; */
-   text-decoration: underline !important;
- }
- /* .hidden{
-   display: none;
- } */
+   height: 4vw;
+   line-height: 10vw;
+}
+
+
+h2 {
+   text-align: center;
+   bottom: 3vw;
+   position: relative;
+   text-decoration: underline;
+   font-size: 2rem;
+   color: rgb(230, 13, 230);
+   font-weight: bold;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h3 {
+   text-align: center;
+   bottom: 3vw;
+   text-decoration: underline;
+   font-size: 2rem;
+   color: chocolate;
+   font-weight: bold;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#btn{
+   background: linear-gradient(to bottom right, rgb(20, 135, 8), rgba(164, 81, 17, 0.5),rgba(0, 255, 255, 0.44));
+}
+
+.label_2 {
+   color: rgb(8, 192, 195);
+}
+
+/* class form styling */
+
+h4{
+   color: silver;
+   font-size: 2.5rem;
+   text-align: center;
+   position: relative;
+   bottom: 3vw;
+   text-decoration: underline;
+
+}
+#class_management{
+   border: 2px solid white;
+   left: 3vw;;
+   position:relative;
+   bottom: 3vw;
+   height: auto;
+   width: 50vw;
+   box-shadow: 0 0 5px cyan , 0 0 10px cyan,0 0 15px cyan,0 0 20px cyan;
+   border-radius: 20px;
+   background:transparent;
+   line-height:6vw;
+}
+.form3{
+   color: white;
+   font-size: 1.3rem;
+   height: 4vw;
+   width: 30vw;
+   position: relative;
+   outline: none;
+   border-radius: 13px;
+   border: 1px solid rgba(128, 128, 128, 0.813);
+   background:transparent;
+   margin-left: 1vw; 
+}
+
+#class_management label{
+   color:gold;
+   font-size: 1.5rem;   
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#grade-level{
+   width: 27vw;
+   height: 3vw;
+   position: relative;
+   left: 2vw;
+   background-color: transparent;
+   outline: none;
+   border-radius: 10px;
+   color: wheat;
+   font-size: 1.1rem;
+}
+
+#grade-level option{
+   background-color:rgba(0, 0, 0, 0.78);
+   font-size: 1.3rem;
+}
+.btn{
+   background: linear-gradient(to bottom right, rgb(238, 7, 238), rgba(0, 255, 255, 0.5));
+   color: white;
+}
+
+
+/* fee management */
+
+#fee_management{
+   line-height: 6vw;
+   border: 1px solid yellow;
+   scale: 1;
+}
+#fee{
+   color: greenyellow;
+}
+
+#form4{
+   color: bisque;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 1.6rem;
+}
+.fee{
+ 
+   position: relative;
+   height: 3vw ;
+   width: 30vw;
+   left: 2vw;
+   background: transparent;
+   color: rgb(218, 14, 218);
+   font-size: 1.2rem;
+   outline: none;
+   border-radius: 10px;
+}
+.fee option{
+   background-color: rgb(29, 23, 23);
+}
